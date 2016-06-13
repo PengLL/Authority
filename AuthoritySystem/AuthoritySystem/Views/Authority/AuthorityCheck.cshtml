@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Domain.Model.Authorities>
+@{
+    ViewBag.Title = "AuthorityCheck";
+}
+<div class="ContentPanel" id="AjaxPart">
+    <div class="panel panel-default">
+        <div class="panel-body ">
+            <div class="AuthorityList">
+                <h3><label>权限选择</label></h3>
+                <p>
+                    <ul class="list-group">
+                        @foreach (var item in Model)
+                        {
+                            <li><label>@item.Authority_Name</label></li>
+                        }
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

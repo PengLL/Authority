@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Domain.Model.User>
+
+@{
+    ViewBag.Title = "UserManage";
+}
+@Html.Partial("SideBar")
+<div class="ContentPanel" id="AjaxPart">
+    @Html.Partial("UsersList")
+</div>

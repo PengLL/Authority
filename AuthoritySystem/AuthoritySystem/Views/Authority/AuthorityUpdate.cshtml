@@ -1,0 +1,32 @@
+﻿@model Domain.Model.Authorities
+
+@{
+    ViewBag.Title = "AuthorityUpdate";
+}
+<div class="ContentPanel">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary()
+                <div class="form-group">
+                    <p><label>权限名</label>@Html.TextBoxFor(Model => Model.Authority_Name, new { @class = "form-control" })</p>
+                    <p>@Html.TextBoxFor(Model => Model.Url, new { @class = "form-control hide", id = "urls" })</p>
+                    <p>@Html.TextBoxFor(Model => Model.Authority_Id, new { @class = "form-control hide", id = "urls" })</p>
+                    <p>
+                        <label>选择url</label>
+                        <select id="selectedUrl" onchange="AddAuthority();">
+                            @foreach (var item in ViewBag.AllUrl)
+                            {
+                                <option>@item</option>
+                            }
+                        </select>
+                    </p>
+                    <button type="submit" class="btn btn-default">提交</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+

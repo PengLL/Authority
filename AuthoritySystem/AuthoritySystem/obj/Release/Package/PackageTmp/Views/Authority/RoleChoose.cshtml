@@ -1,0 +1,24 @@
+﻿@model Domain.Model.Role
+
+@{
+    ViewBag.Title = "RoleChoose";
+}
+@Html.Partial("SideBar")
+<div class="ContentPanel">
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>
+                <label>角色选择</label>
+                <select id="selected">
+                    @foreach (var item in ViewBag.AllRoles)
+                    {
+                        <option>@item.Role_Name</option>
+                    }
+                </select>
+            </p>
+            <button class="btn btn-default" onclick="RoleChoose();">提交</button>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Domain.Model.Authorities>
+@Html.Partial("SideBar")
+<div class="ContentPanel" id="AjaxPart">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h3>权限选择</h3>
+            <ul class="list-group">
+                @foreach (var item in Model)
+                {
+                    <li><label>@item.Authority_Name</label></li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+

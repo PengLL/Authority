@@ -1,0 +1,19 @@
+﻿@model Domain.Model.Role
+
+@{
+    ViewBag.Title = "RoleAdd";
+}
+@Html.Partial("SideBar")
+<div class="ContentPanel">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form action="/Authority/RoleAdd" method="post">
+                @Html.ValidationSummary()
+                <div class="form-group">
+                    <p><label>角色名</label><input type="text" name="Role_Name" class="form-control" /></p>                   
+                    <button type="submit" class="btn btn-default">添加</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

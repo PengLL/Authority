@@ -1,0 +1,59 @@
+﻿
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <p class="navbar-text">Hello:  @ViewBag.UserName</p>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/Account/SignOut">退出登录</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="sidebar">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-info">@Html.ActionLink("主页", "Index", "Home")</li>
+
+                @foreach (var item in ViewBag.UrlListToShow)
+                {
+                    <li class="list-group-item list-group-item-info"><a href="@item.Url">@item.Authority_Name</a></li>
+                }
+                @*@if (manager.GetUsersRole().Role_Name == "admin")
+                    {
+                        <li class="list-group-item list-group-item-info">@Html.ActionLink("广告页", "Advertise", "Home")</li>
+                        <li class="list-group-item list-group-item-info">@Html.ActionLink("用户管理", "UserManage", "Authority")</li>
+                        <li class="list-group-item list-group-item-info">@Html.ActionLink("角色管理", "RoleManage", "Authority")</li>
+                        <li class="list-group-item list-group-item-info">@Html.ActionLink("日志管理", "LogManage", "Home")</li>
+                        <li class="list-group-item list-group-item-info">@Html.ActionLink("权限控制", "AuthorityExists", "Authority")</li>
+                    }
+                    else
+                    {
+
+                        if (manager.HasAuthority("/Home/Advertise"))
+                        {
+                            <li class="list-group-item list-group-item-info">@Html.ActionLink("广告页", "Advertise", "Home")</li>
+                        }
+
+                        if (manager.HasAuthority("/Authority/UserManage"))
+                        {
+                            <li class="list-group-item list-group-item-info">@Html.ActionLink("用户管理", "UserManage", "Authority")</li>
+                        }
+                        if (manager.HasAuthority("/Authority/RoleManage"))
+                        {
+                            <li class="list-group-item list-group-item-info">@Html.ActionLink("角色管理", "RoleManage", "Authority")</li>
+                        }
+                        if (manager.HasAuthority("/Home/LogManage"))
+                        {
+                            <li class="list-group-item list-group-item-info">@Html.ActionLink("日志管理", "LogManage", "Home")</li>
+                        }
+                        if (manager.HasAuthority("/Authority/AuthorityExists"))
+                        {
+                            <li class="list-group-item list-group-item-info">@Html.ActionLink("权限控制", "AuthorityExists", "Authority")</li>
+                        }
+                    }*@
+
+            </ul>
+        </div>
+    </div>
+</div>

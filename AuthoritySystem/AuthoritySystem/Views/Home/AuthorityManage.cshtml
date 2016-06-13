@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Domain.Model.Authorities>
+@{
+    ViewBag.Title = "AuthorityManage";
+}
+<div class="ContentPanel">
+    <div class="panel panel-default">
+        <h3>权限列表</h3>
+        <div class="panel-body">
+            <a href="/Authority/AuthorityAdd">添加权限</a>
+            <table class="table table-striped">
+                <tr><th>权限名称</th><th>操作</th><th>操作</th></tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Authority_Name</td>
+                        <td><button class="btn btn-default" onclick="AuthorityUpdate(this.value);" value="@item.Authority_Name">修改</button></td>
+                        <td><button class="btn btn-default" onclick="AuthorityDelete(this.value);" value="@item.Authority_Name">删除</button></td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>

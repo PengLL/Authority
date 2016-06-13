@@ -1,0 +1,20 @@
+﻿@model Domain.Model.User
+<div class="panel panel-default">
+    <div class="panel-body">
+        <table class="table table-striped">
+            <tr><td>用户名</td><td>@Model.User_Name</td></tr>
+            <tr><td>角色</td><td>@ViewBag.roleName</td><td><label><a href="/Authority/UsersRoleChange?userId=@Model.User_Id">更改角色</a></label></td></tr>
+        </table>
+        <ul class="list-group">
+            <li class="list-group-item active">权限</li>
+            @foreach(var item in ViewBag.AuthorityList)
+            {
+                <li class="list-group-item">@item.Authority_Name</li>
+            }
+            
+            
+        </ul>
+    </div>
+</div>
+
+

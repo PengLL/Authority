@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Domain.Model.Authorities>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h3>权限选择</h3>
+        <ul class="list-group">
+            @foreach (var item in Model)
+            {
+                <li class="list-group-item"><input type="checkbox" value="@item.Authority_Id" class="cb" /><label>@item.Authority_Name</label></li>
+            }
+        </ul>
+        <button class="btn btn-default" onclick="RolesAuthorities();">提交</button>
+    </div>
+</div>

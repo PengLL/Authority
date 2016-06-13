@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Domain.Model.Role>
+@{
+    ViewBag.Title = "UsersRoleChange";
+}
+@Html.Partial("SideBar");
+<div class="ContentPanel" id="AjaxPart">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>
+                <label>角色选择</label>
+                <select id="selected">
+                    @foreach (var item in Model)
+                    {
+                        <option>@item.Role_Name</option>
+                    }
+                </select>
+            </p>
+            <button class="btn btn-default" onclick="UsersRoleChange();">提交</button>
+        </div>
+    </div>
+</div>

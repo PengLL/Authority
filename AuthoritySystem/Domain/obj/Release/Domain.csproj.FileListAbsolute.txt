@@ -1,0 +1,8 @@
+D:\Authority\AuthoritySystem\Domain\bin\Release\Domian.dll
+D:\Authority\AuthoritySystem\Domain\bin\Release\Domian.pdb
+D:\Authority\AuthoritySystem\Domain\obj\Release\Domian.dll
+D:\Authority\AuthoritySystem\Domain\obj\Release\Domian.pdb
+D:\Authority2.0\AuthoritySystem\Domain\bin\Release\Domian.dll
+D:\Authority2.0\AuthoritySystem\Domain\bin\Release\Domian.pdb
+D:\Authority2.0\AuthoritySystem\Domain\obj\Release\Domian.dll
+D:\Authority2.0\AuthoritySystem\Domain\obj\Release\Domian.pdb

@@ -1,0 +1,12 @@
+D:\Authority2.0\AuthoritySystem\ICoreInterfaces\bin\Debug\ICoreInterfaces.dll
+D:\Authority2.0\AuthoritySystem\ICoreInterfaces\bin\Debug\ICoreInterfaces.pdb
+D:\Authority2.0\AuthoritySystem\ICoreInterfaces\obj\Debug\ICoreInterfaces.csprojResolveAssemblyReference.cache
+D:\Authority2.0\AuthoritySystem\ICoreInterfaces\obj\Debug\ICoreInterfaces.dll
+D:\Authority2.0\AuthoritySystem\ICoreInterfaces\obj\Debug\ICoreInterfaces.pdb
+D:\Authority2.0\AuthoritySystem\ICoreInterfaces\bin\Debug\Domian.dll
+D:\Authority2.0\AuthoritySystem\ICoreInterfaces\bin\Debug\Domian.pdb
+D:\2016-6-3\AuthoritySystem\ICoreInterfaces\obj\Debug\ICoreInterfaces.csprojResolveAssemblyReference.cache
+D:\2016-6-3\AuthoritySystem\ICoreInterfaces\obj\Debug\ICoreInterfaces.dll
+D:\2016-6-3\AuthoritySystem\ICoreInterfaces\obj\Debug\ICoreInterfaces.pdb
+D:\2016-6-3\AuthoritySystem\ICoreInterfaces\bin\Debug\ICoreInterfaces.dll
+D:\2016-6-3\AuthoritySystem\ICoreInterfaces\bin\Debug\ICoreInterfaces.pdb

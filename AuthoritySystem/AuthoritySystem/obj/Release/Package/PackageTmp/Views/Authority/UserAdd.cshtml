@@ -1,0 +1,22 @@
+﻿@model Domain.Model.User
+
+@{
+    ViewBag.Title = "UserAdd";
+}
+@Html.Partial("SideBar")
+<div class="ContentPanel">
+    
+    <div class="panel panel-default">
+        <div class="panel-body">          
+            @using(Html.BeginForm())
+            {
+                @Html.ValidationSummary();
+                <div class="form-group">
+                    <p><label>用户名</label>@Html.TextBoxFor(Model => Model.User_Name, new { @class = "form-control" })</p>
+                    <p><label>密码</label>@Html.PasswordFor(Model => Model.Pwd, new { @class = "form-control" })</p>                                
+                    <button type="submit" class="btn btn-default">添加</button>
+                </div>
+            }                         
+        </div>
+    </div>
+</div>

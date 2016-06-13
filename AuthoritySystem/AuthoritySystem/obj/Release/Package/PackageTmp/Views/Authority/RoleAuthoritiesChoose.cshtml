@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Domain.Model.Authorities>
+
+@{
+    ViewBag.Title = "RoleAuthoritiesChoose";
+}
+@Html.Partial("SideBar")
+<div class="ContentPanel" id="AjaxPart">
+    @Html.Partial("AuthorityList")
+</div>
+

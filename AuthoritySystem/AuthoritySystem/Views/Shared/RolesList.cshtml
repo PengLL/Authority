@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Domain.Model.Role>
+<ul class="nav nav-tabs">
+    <li role="presentation"><input type="text" class="form-control" placeholder="Search" id="searchText"></li>
+    <li role="presentation"><button type="button" class="btn btn-default" onclick="SeacrhRoles();"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></li>
+    <li role="presentation"><a href="/Authority/RoleAdd">添加角色</a></li>
+</ul>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <table class="table table-striped">
+            <tr><th>角色名</th><th>操作</th><th>操作</th><th>操作</th><th>操作</th></tr>
+            @foreach (var role in Model)
+            {
+                <tr>
+                    <td>@role.Role_Name</td><td><button class="btn btn-default" value="@role.Role_Name" onclick="AuthorityChanged(this.value);">更改权限</button></td>
+                    <td><button class="btn btn-default" value="@role.Role_Id" onclick="RoleDelete(this.value)">删除</button></td>
+                    <td><button class="btn btn-default" onclick="RolesUsers(this.value)" value="@role.Role_Name">查看用户</button></td>
+                    <td><button class="btn btn-default" onclick="RolesAuthorityCheck(this.value)" value="@role.Role_Name">查看权限</button></td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Domain.Model.User>
+@Html.Partial("SideBar")
+<div class="ContentPanel" id="AjaxPart">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table class="table table-striped">
+                <tr><th>用户名</th><th>操作</th><th>操作</th></tr>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.User_Name</td>
+                        <td><button class="btn btn-default" onclick="UserUpdate(this.value);" value="@user.User_Name">更新</button></td>
+                        <td><button class="btn btn-default" value="@user.User_Id" onclick="UserDelete(this.value);">删除</button></td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
