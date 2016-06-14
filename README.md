@@ -13,6 +13,6 @@
 ![](https://github.com/PengLL/AuthoritySystem/raw/master/ReadmeImage/sql.png)
 ######ps：在数据库中设置角色表的时候如果设置SuperAdmin字段为true，则该角色拥有所有的权限
 ######    删除角色本人用的是存储过程，因为涉及到删除属于该角色的所有用户，角色权限等，涉及了四张表。其他地方用的是级联。
-![](https://github.com/PengLL/AuthoritySystem/raw/master/ReadmeImage/proc.png)
+![](https://github.com/PengLL/AuthoritySystem/raw/master/ReadmeImage/Proc.png)
 ######    大家可以按照自己的需求设计数据库，但是在Domainproject中的sql语句需要相应进行更改。其他部分不需要更改。各个部分耦合度都比较低。
 ######    现在这个版本并不是十分健壮，后续会进行更改。
